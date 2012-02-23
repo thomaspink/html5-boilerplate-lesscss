@@ -1,0 +1,22 @@
+.inline-block() {
+	display: inline-block;
+	*display: inline;
+	zoom: 1;
+}
+
+.border-radius(@radius: 5px) {
+	-webkit-border-radius: @radius;
+	   -moz-border-radius: @radius;
+			border-radius: @radius;
+}
+
+.gradient(@from: #ffffff,@to: #f0f0f0) {
+	background-color: @from;
+	background-image: -webkit-gradient(linear, left top, left bottom, from(@from), to(@to));
+	background-image: -webkit-linear-gradient(top, @from, @to);
+	background-image: -moz-linear-gradient(top, @from, @to);
+	background-image: -o-linear-gradient(top, @from, @to);
+	background-image: -ms-linear-gradient(top, r@from, r@to);
+	background-image: linear-gradient(top, @from, r@to);
+	filter: progid:DXImageTransform.Microsoft.gradient(GradientType=0,StartColorStr='@{from}', EndColorStr='@{to}');
+}
