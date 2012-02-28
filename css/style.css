@@ -336,20 +336,6 @@ td {
   color: black;
   padding: 0.2em 0;
 }
-/* ==|== primary styles =====================================================
-   Author:
-   ========================================================================== */
-/* Define your own styles here or import your LESS/CSS files */
-/* ==|== media queries ======================================================
-   EXAMPLE Media Query for Responsive Design.
-   This example overrides the primary ('mobile first') styles
-   Modify as content requires.
-   ========================================================================== */
-@media only screen and (min-width: 35em) {
-  /* Style adjustments for viewports that meet the condition */
-}
-/* ==|== non-semantic helper classes ========================================
-   ========================================================================== */
 /* For image replacement */
 .ir {
   display: block;
@@ -380,8 +366,9 @@ td {
   padding: 0;
   position: absolute;
   width: 1px;
+  /* Extends the .visuallyhidden class to allow the element to be focusable when navigated to via the keyboard: h5bp.com/p */
+
 }
-/* Extends the .visuallyhidden class to allow the element to be focusable when navigated to via the keyboard: h5bp.com/p */
 .visuallyhidden.focusable:active, .visuallyhidden.focusable:focus {
   clip: auto;
   height: auto;
@@ -395,6 +382,9 @@ td {
   visibility: hidden;
 }
 /* Contain floats: h5bp.com/q */
+.clearfix {
+  *zoom: 1;
+}
 .clearfix:before, .clearfix:after {
   content: "";
   display: table;
@@ -402,8 +392,17 @@ td {
 .clearfix:after {
   clear: both;
 }
-.clearfix {
-  *zoom: 1;
+/* ==|== primary styles =====================================================
+   Author:
+   ========================================================================== */
+/* Define your own styles here or import your LESS/CSS files */
+/* ==|== media queries ======================================================
+   EXAMPLE Media Query for Responsive Design.
+   This example overrides the primary ('mobile first') styles
+   Modify as content requires.
+   ========================================================================== */
+@media only screen and (min-width: 35em) {
+  /* Style adjustments for viewports that meet the condition */
 }
 /* ==|== print styles =======================================================
    Print styles.
