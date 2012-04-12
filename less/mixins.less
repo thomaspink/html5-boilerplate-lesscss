@@ -79,7 +79,77 @@
 .border-radius(@radius: 5px) {
 	-webkit-border-radius: @radius;
 	   -moz-border-radius: @radius;
+	    -ms-border-radius: @radius;
+	     -o-border-radius: @radius;
 			border-radius: @radius;
+}
+
+.border-radius-left(@radius: 5px) {
+	-webkit-border-top-left-radius: @radius;
+       -moz-border-radius-topleft:  @radius;
+    	-ms-border-top-left-radius: @radius;
+    	 -o-border-top-left-radius: @radius;
+			border-top-left-radius: @radius;
+	-webkit-border-bottom-left-radius: @radius;
+       -moz-border-radius-bottomleft:  @radius;
+    	-ms-border-bottom-left-radius: @radius;
+    	 -o-border-bottom-left-radius: @radius;
+			border-bottom-left-radius: @radius;
+}
+
+.border-radius-right(@radius: 5px) {
+	-webkit-border-top-right-radius: @radius;
+       -moz-border-radius-topright:  @radius;
+    	-ms-border-top-right-radius: @radius;
+    	 -o-border-top-right-radius: @radius;
+			border-top-right-radius: @radius;
+	-webkit-border-bottom-right-radius: @radius;
+       -moz-border-radius-bottomright:  @radius;
+    	-ms-border-bottom-right-radius: @radius;
+    	 -o-border-bottom-right-radius: @radius;
+			border-bottom-right-radius: @radius;
+}
+
+.border-radius-top(@radius: 5px) {
+	-webkit-border-top-left-radius: @radius;
+       -moz-border-radius-topleft:  @radius;
+    	-ms-border-top-left-radius: @radius;
+    	 -o-border-top-left-radius: @radius;
+			border-top-left-radius: @radius;
+	-webkit-border-top-right-radius: @radius;
+       -moz-border-radius-topright:  @radius;
+    	-ms-border-top-right-radius: @radius;
+    	 -o-border-top-right-radius: @radius;
+			border-top-right-radius: @radius;
+}
+
+.border-radius-bottom(@radius: 5px) {
+	-webkit-border-bottom-left-radius: @radius;
+       -moz-border-radius-bottomleft:  @radius;
+    	-ms-border-bottom-left-radius: @radius;
+    	 -o-border-bottom-left-radius: @radius;
+			border-bottom-left-radius: @radius;
+	-webkit-border-bottom-right-radius: @radius;
+       -moz-border-radius-bottomright:  @radius;
+    	-ms-border-bottom-right-radius: @radius;
+    	 -o-border-bottom-right-radius: @radius;
+			border-bottom-right-radius: @radius;
+}
+
+.box-shadow(@values) {
+	-webkit-box-shadow: @values;
+	   -moz-box-shadow: @values;
+		-ms-box-shadow: @values;
+		 -o-box-shadow: @values;
+			box-shadow: @values;
+}
+
+.box-shadow-2(@value1, @value2) {
+	-webkit-box-shadow: @value1 ,@value2;
+	   -moz-box-shadow: @value1 ,@value2;
+		-ms-box-shadow: @value1 ,@value2;
+		 -o-box-shadow: @value1 ,@value2;
+			box-shadow: @value1 ,@value2;
 }
 
 .gradient(@from: #ffffff,@to: #f0f0f0) {
@@ -88,7 +158,7 @@
 	background-image: -webkit-linear-gradient(top, @from, @to);
 	background-image: -moz-linear-gradient(top, @from, @to);
 	background-image: -o-linear-gradient(top, @from, @to);
-	background-image: -ms-linear-gradient(top, r@from, r@to);
-	background-image: linear-gradient(top, @from, r@to);
+	background-image: -ms-linear-gradient(top, @from, @to);
+	background-image: linear-gradient(top, @from, @to);
 	filter: ~"progid:DXImageTransform.Microsoft.gradient(GradientType=0,StartColorStr='@{from}', EndColorStr='@{to}')";
 }
