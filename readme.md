@@ -1,5 +1,5 @@
+## OUTDATED
 #LESS CSS for HTML5 Boilerplate
-by Thomas Pink
 
 ##Check
 [HTML5 Boilerplate](http://html5boilerplate.com) | 
